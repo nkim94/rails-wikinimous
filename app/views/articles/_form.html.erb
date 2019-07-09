@@ -1,0 +1,10 @@
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+
+  <%#= f.button f.object.new_record? ? 'Create' : 'Update' %>
+  <%= f.submit %>
+<% end %>
