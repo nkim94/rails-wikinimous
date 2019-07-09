@@ -1,5 +1,6 @@
-<h1>Edit <%= @article.title %></h1>
+<div class="show">
+  <h1>Edit <%= @article.title %></h1>
+  <%= render 'form' %>
 
-<%= render 'form' %>
-
-<%= link_to 'Back to Articles', articles_path %>
+  <%= link_to 'Back to Articles', articles_path %>
+</div>
